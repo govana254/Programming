@@ -1,9 +1,14 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(2, 71, 2);
+    background: url(our-gaming-blackjack.jpg);
     text-align: center;
     color: white;
+    height: 100vh;
     font-weight: bold;
+    background-repeat:no-repeat;
+    background-image: url(our-gaming-blackjack.jpg);
+    background-size:cover;
+    border: thick double #32a1ce;
 
 }
 
@@ -13,6 +18,15 @@ h1 {
 
 #message-el {
    font-style: italic;
+}
+
+#items {
+    background-color: #016f32;
+    width: 45%;
+    height: 60%;
+    padding: 20px;
+    justify-content: center;
+    margin: auto;
 }
 
 button {
