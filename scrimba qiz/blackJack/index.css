@@ -8,7 +8,6 @@ body {
     background-repeat:no-repeat;
     background-image: url(our-gaming-blackjack.jpg);
     background-size:cover;
-    border: thick double #32a1ce;
 
 }
 
@@ -24,7 +23,7 @@ h1 {
     background-color: #016f32;
     width: 45%;
     height: 60%;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     margin: auto;
 }
