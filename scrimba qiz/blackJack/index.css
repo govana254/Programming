@@ -4,10 +4,11 @@ body {
     text-align: center;
     color: white;
     height: 100vh;
-    font-weight: bold;
+    font-weight: 1000;
     background-repeat:no-repeat;
     background-image: url(our-gaming-blackjack.jpg);
     background-size:cover;
+    position:relative ;
 
 }
 
@@ -16,27 +17,57 @@ h1 {
 }
 
 #message-el {
-   font-style: italic;
+    font-style: italic;
 }
 
 #items {
     background-color: #016f32;
-    width: 45%;
+    width: clamp( 200px, 30%, 300px);
+    height: clamp(200px, 100%, 320px);
+    position: absolute;
+    top: 10vh;
+    right: 35%;
+    padding: 15px auto;
+    border-radius: 0 5%;
+    z-index: 1;
+}
+
+#card-one{
+    /* border: 1px solid yellow; */
     height: 60%;
+    width: clamp( 200px, 30%, 300px);
+    top: 6vh;
+    position: absolute;
+    right: 1%;
     padding: 15px;
-    justify-content: center;
-    margin: auto;
+    background-color: rgb(19, 145, 46);
+    border-radius: 10px;
+}
+
+#card-two {
+    /* border: 2px solid red; */
+    height: 60%;
+    width: clamp( 200px, 30%, 300px);
+    top: 6vh;
+    position: absolute;
+    left: 1%;
+    padding: 15px;
+    background-color: rgb(19, 145, 46);
+    border-radius: 10px;
+
+
 }
 
 button {
     color:#016f32;
     width: 150px;
     background: goldenrod;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
     border-radius: 2px;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-weight: 800;
 }
