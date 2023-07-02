@@ -9,6 +9,9 @@ body {
     background-image: url(our-gaming-blackjack.jpg);
     background-size:cover;
     position:relative ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 
@@ -23,22 +26,24 @@ h1 {
 #items {
     background-color: #016f32;
     width: clamp( 200px, 30%, 300px);
-    height: clamp(200px, 100%, 320px);
-    position: absolute;
-    top: 10vh;
-    right: 35.5%;
-    padding: 15px auto;
+    height: 65%;
+    margin-top: 10vh;
     border-radius: 0 5%;
     z-index: 1;
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #card-one, #card-two {
     height: 60%;
-    width: clamp( 200px, 30%, 300px);
+    width: clamp( 150px, 25%, 200px);
     top: 6vh;
     position: absolute;
     padding: 15px;
-    background-color: rgb(19, 145, 46);
+    background-color: rgb(195, 206, 197);
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -46,7 +51,7 @@ h1 {
 }
 
 #card-one {
-    right: 1%;
+    right: 3vw;
 }
 #diamond-shape {
     width: 0;
@@ -68,9 +73,8 @@ h1 {
 }
 
 #hearts-shape {
-    position:absolute;
-    left: 90px;
-    top: 10px;
+    position:relative;
+    top: -60vh;
 }
 #hearts-shape:before,
 #hearts-shape:after {
@@ -92,7 +96,7 @@ h1 {
     }
 
 #card-two {
-    left: 1%;
+    left: 3vw;
 }
 
 .shape{
@@ -150,4 +154,10 @@ button {
     margin-top: 2px;
     margin-bottom: 2px;
     font-weight: 800;
+}
+
+i {
+    position: absolute;
+    top: 2vh;
+    color: #0c0c0c
 }
