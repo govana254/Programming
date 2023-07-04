@@ -6,3 +6,5 @@ inputBtn.addEventListener("click", function() {
     myLeads.push(inputEL.value)
     console.log(myLeads)
 })
+
+for (i = 0; )

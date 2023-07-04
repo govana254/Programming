@@ -161,3 +161,15 @@ i {
     top: 2vh;
     color: #0c0c0c;
 }
+
+#right-card, #left-card {
+    width: 15vw;
+    height: 10vh;
+    color: black;
+    font-size:xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+}

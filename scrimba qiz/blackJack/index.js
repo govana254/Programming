@@ -20,6 +20,10 @@ let cardsEl = document.getElementById("cards-el")
 
 let playerEl = document.getElementById("player-el")
 
+let leftCard = document.getElementById("left-card")
+
+let rightCard = document.getElementById("right-card")
+
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
@@ -41,6 +45,8 @@ function startGame() {
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
+    leftCard.textContent= firstCard
+    rightCard.textContent=secondCard
     renderGame()
 }
 
@@ -49,7 +55,6 @@ function renderGame() {
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
-
     sumEl.textContent= "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
