@@ -179,43 +179,22 @@ i {
         height: 40%;
         width: clamp( 100px, 35%, 150px);
         top: 4vh;
-        /* position: absolute; */
-        /* padding: 15px; */
-        /* background-color: rgb(195, 206, 197); */
-        /* border-radius: 4%; */
-        /* display: flex; */
-        /* align-items: flex-end; */
-        /* justify-content: center; */
     }
 
     #items {
-        /* background-color: #016f32; */
         width: clamp( 200px, 75%, 150px);
         height: 50%;
         margin-top: 45vh;
-        /* border-radius: 0 5%; */
-        /* z-index: 1; */
         overflow:hidden;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* padding-top: 2vh; */
     }
 
     #right-card, #left-card {
         width: 5vw;
         height: 50vh;
-        /* color: black; */
         font-size:150%;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* position: absolute; */
         top: -3vh;
     }
     #hearts-shape {
-        /* position:relative; */
         top: -40vh;
     }
 }
