@@ -45,8 +45,8 @@ function clearInputFieldEl () {
 }
 
 function appendItemToShoppingListEl(item) {
-    let itemID = [0]
-    let itemValue = [1]
+    let itemID = item[0]
+    let itemValue = item[1]
 
     let newEL = document.createElement("li")
 
