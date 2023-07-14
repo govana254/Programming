@@ -14,6 +14,7 @@ input {
     border: 1px solid #5f9341;
     border-radius: 7px;
     margin-bottom: 4px;
+    font-size: 15px;
 }
 
 button {
@@ -38,10 +39,11 @@ ul {
 
 li {
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 li a {
     color: #5f9341;
     text-decoration: none;
+    font-size: 15px;
 }
