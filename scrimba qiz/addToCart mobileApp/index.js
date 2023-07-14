@@ -17,13 +17,15 @@ const shoppingListEl = document.getElementById("shopping-list")
 addButtonEl.addEventListener("click", function () {
     let inputValue = inputFieldEl.value
     
-    push(shoppingListInDB, inputValue)
-    
+    if (inputValue) {
+        push(shoppingListInDB, inputValue)
+    }
     clearInputFieldEl ()
 })
 
 inputFieldEl.addEventListener("keypress", function() {
-    if (event.keyCode === 13 || event.key === 'Enter') {
+    let inputValue = inputFieldEl.value
+    if ((event.keyCode === 13 || event.key === 'Enter') && inputValue) {
         addToCart()
     }
 })
