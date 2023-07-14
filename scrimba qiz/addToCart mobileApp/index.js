@@ -14,12 +14,18 @@ const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
 
-addButtonEl.addEventListener("click", function() {
+addButtonEl.addEventListener("click", function () {
     let inputValue = inputFieldEl.value
     
     push(shoppingListInDB, inputValue)
     
     clearInputFieldEl ()
+})
+
+inputFieldEl.addEventListener("keypress", function() {
+    if (event.keyCode === 13 || event.key === 'Enter') {
+        addToCart()
+    }
 })
 
 onValue( shoppingListInDB, function(snapshot) {
@@ -50,6 +56,14 @@ function clearInputFieldEl () {
     inputFieldEl.value = ""
 }
 
+function addToCart() {
+    let inputValue = inputFieldEl.value
+    
+    push(shoppingListInDB, inputValue)
+    
+    clearInputFieldEl ()
+}
+
 function appendItemToShoppingListEl(item) {
     let itemID = item[0]
     let itemValue = item[1]
@@ -58,7 +72,7 @@ function appendItemToShoppingListEl(item) {
 
     newEL.textContent = itemValue
 
-    newEL.addEventListener("dblclick", function() {
+    newEL.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
 
         remove(exactLocationOfItemInDB)
